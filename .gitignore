@@ -2,6 +2,7 @@ build/
 dist/
 
 nbproject/private/
+nbproject/build-impl.xml
 
 *.class
 *.jar
@@ -12,6 +13,3 @@ nbproject/private/
 
 .DS_Store
 Thumbs.db
-
-*.bak
-*.tmp

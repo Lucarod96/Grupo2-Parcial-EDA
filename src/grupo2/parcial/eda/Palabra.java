@@ -1,14 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package grupo2.parcial.eda;
 
-/**
- *
- * @author camila biarnes
- */
+
 public class Palabra {
-    
+
+    private String texto;
+    private int cantidad;
+
+    public Palabra(String texto) {
+        this.texto = texto.toLowerCase();
+        this.cantidad = 1;
+    }
+
+    public String getTexto() {
+        return texto;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void incrementarCantidad() {
+        cantidad++;
+    }
+
+    @Override
+    public String toString() {
+        return texto + " (" + cantidad + ")";
+    }
 }
